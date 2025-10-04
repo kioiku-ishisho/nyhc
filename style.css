@@ -109,6 +109,12 @@ header {
 
 .gov_solution p,.gov_solution strong {
 	color:aliceblue;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.gov_solution td:hover p,.gov_solution td:hover strong {
+  color: #ffeb99;
+  transform: translateY(-8px);
 }
 
 .greenspace {
