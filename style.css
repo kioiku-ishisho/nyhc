@@ -8,11 +8,25 @@
 
 h1 {
 	font-size:50px;
+	opacity: 0;
+	animation: fadeIn 2s ease-in forwards;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
 
 h2 {
 	text-align:center;
-	font-size:30px;
+	font-size:40px;
 	padding:30px;
 	font-weight:700;
 }
@@ -23,6 +37,10 @@ h3 {
 
 p {
 	font-size:20px;
+}
+
+strong {
+	font-size: 28px;
 }
 
 div {
@@ -37,7 +55,7 @@ footer, header {
 header {
 	position:fixed;
 	top:0px;
-	background-color:#0A093D;
+	background-color:#00001E;
 	width:100%;
 }
 
@@ -63,7 +81,7 @@ header {
 	transition: filter 0.3s ease;
 }
 
-.title button:hover {
+.title button:hover, .problem button:hover {
 	filter: brightness(50%);
 }
 
@@ -85,14 +103,63 @@ header {
 	padding:100px 70px;
 }
 
+.gov_solution td {
+	height: 260px;
+	width: 33%;
+	background-repeat: no-repeat;
+}
+
+.gov_solution p,.gov_solution strong {
+	color:aliceblue;
+}
+
+.greenspace {
+	background-image: url("government plan/greenspace-dark.png")
+}
+
+.cooldesign {
+	background-image: url("government plan/cool-design-dark.png")
+}
+
+.watercooling {
+	background-image: url("government plan/water-cooling-dark.png")
+}
+
+.householdcooling {
+	background-image: url("government plan/houseohld-cooling-dark.png")
+}
+
+.publicac {
+	background-image: url("government plan/public-ac-dark.png")
+}
+
+.healthcare {
+	background-image: url("government plan/health-care2-dark.png")
+}
+
 .problem img {
 	width:300px;
+	height:200px;
 	transition: filter 0.3s ease;
 }
 
 .problem img:hover {
 	width:330px;
 	filter: brightness(50%);
+}
+
+.problem section {
+	text-align: center;
+}
+
+.problem button {
+	background-color: #00001E;
+	color: #edb02c;
+	width: 25%;
+	height: 80px;
+	font-size: 28px;
+	font-weight: 700;
+	transition: filter 0.3s ease;
 }
 
 .resources_part {
