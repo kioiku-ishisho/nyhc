@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family:"sans-serif";
+	color:#262626;
+}
+
+h2 {
+	text-align:center;
+}
+
+div {
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+footer, header {
+	height: 50px;
+}
+
+.title {
+	text-align:center;
+}
+
+.resources_part {
+	text-align: center;
+}
+
+.resources img{
+	width: auto;
+	height: 60px;
+}
+
+footer {
+	text-align: center;
+}
