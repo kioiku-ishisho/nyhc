@@ -3,7 +3,7 @@
 
 * {
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	color:#232323;
+	color:#2F2F2F;
 }
 
 h1 {
@@ -48,20 +48,18 @@ div {
 	padding-bottom:50px;
 }
 
-footer, header {
-	height: 50px;
-}
-
 header {
+	height: 60px;
 	position:fixed;
 	top:0px;
 	background-color:#00001E;
 	width:100%;
+	z-index:2;
 }
 
 .title {
 	text-align:center;
-	padding:350px 70px;
+	padding:150px 70px 350px;
 	background-image: url("nyc-nightview.png");	
 	background-size:cover;
 	background-position:center;
@@ -86,7 +84,7 @@ header {
 }
 
 .nyc {
-	padding:50px 0px;
+	padding:50px 0px 100px;
 	background-color:#9cde9f;
 }
 
@@ -100,7 +98,7 @@ header {
 
 .problem {
 	background-color:#edb02c;
-	padding:100px 70px;
+	padding:50px 70px 100px;
 }
 
 .gov_solution td {
@@ -137,16 +135,55 @@ header {
 	background-image: url("government plan/health-care2-dark.png")
 }
 
-.problem img {
-	width:300px;
-	height:200px;
+/*.problem img {
+	width:80%;
+	height:auto;
 	transition: filter 0.3s ease;
 }
 
 .problem img:hover {
-	width:330px;
+	width:90%;
 	filter: brightness(50%);
+}*/
+
+.problem td {
+  position: relative; /* 讓 overlay-text 可以絕對定位 */
+  overflow: hidden;
+  text-align: center;
 }
+
+.problem img {
+  width: 80%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* hover 時圖片放大 + 變暗 */
+.problem td:hover img {
+  transform: scale(1.1);
+  filter: brightness(50%);
+}
+
+/* 文字初始狀態 */
+.problem .overlay-text {
+  position: absolute;
+  top: 60%; /* 稍微往下，準備滑上來 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease, top 0.4s ease;
+  pointer-events: none;
+}
+
+/* hover 時文字往上滑並淡入 */
+.problem td:hover .overlay-text {
+  opacity: 1;
+  top: 50%; /* 從 60% 滑到 50% */
+}
+
 
 .problem section {
 	text-align: center;
@@ -173,4 +210,6 @@ header {
 
 footer {
 	text-align: center;
+	padding:10px 0px 5px;
+	background-color:#EFEFEF;
 }
