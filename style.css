@@ -46,6 +46,12 @@ strong {
 div {
 	padding-top:50px;
 	padding-bottom:50px;
+	margin:0;
+}
+
+body {
+	width:100%;
+	margin:0;
 }
 
 header {
@@ -170,9 +176,15 @@ li {
 }
 
 .problem img {
-  width: 80%;
+  width: 90%;
   height: auto;
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.our_solution p {
+	color:white;
+	font-size:16px;
+	font-weight:400;
 }
 
 /* hover 時圖片放大 + 變暗 */
@@ -193,6 +205,7 @@ li {
   opacity: 0;
   transition: opacity 0.4s ease, top 0.4s ease;
   pointer-events: none;
+	width:80%;
 }
 
 /* hover 時文字往上滑並淡入 */
