@@ -102,17 +102,28 @@ header {
 }
 
 .gov_solution td {
-	height: 260px;
-	width: 33%;
+	height: 350px;
+	width: 50%;
 	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
-.gov_solution p,.gov_solution strong {
+.gov_solution p,.gov_solution strong,.gov_solution li {
 	color:aliceblue;
 	transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.gov_solution td:hover p,.gov_solution td:hover strong {
+ul {
+	padding: 0 40px 0 70px;
+}
+
+li {
+	text-align:left;
+	font-size: 24px;
+}
+
+.gov_solution td:hover p,.gov_solution td:hover strong,.gov_solution td:hover li {
   color: #ffeb99;
   transform: translateY(-8px);
 }
