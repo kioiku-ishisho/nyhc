@@ -137,10 +137,10 @@ li {
 	font-size: 24px;
 }
 
-.gov_solution td:hover p,.gov_solution td:hover strong,.gov_solution td:hover li {
+/*.gov_solution td:hover p,.gov_solution td:hover strong,.gov_solution td:hover li {
   color: #ffeb99;
   transform: translateY(-8px);
-}
+}*/
 
 .greenspace {
 	background-image: url("government plan/greenspace-dark.png")
