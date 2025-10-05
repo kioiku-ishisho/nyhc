@@ -2,7 +2,7 @@
 /* CSS Document */
 
 * {
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-family: "Inter", "Open Sans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#2F2F2F;
 }
 
@@ -36,7 +36,11 @@ h3 {
 }
 
 p {
-	font-size:20px;
+	font-size: 20px;
+}
+
+.justify {
+	text-align: justify;
 }
 
 strong {
