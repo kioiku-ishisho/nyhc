@@ -33,6 +33,7 @@ h2 {
 
 h3 {
 	font-size:24px;
+	animation: fadeIn 2s ease-in forwards;
 }
 
 p {
@@ -73,6 +74,7 @@ header {
 	background-image: url("nyc-nightview.png");	
 	background-size:cover;
 	background-position:center;
+	background-attachment: fixed;
 }
 
 .title *{
